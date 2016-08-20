@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'signup' => 'user#new'
+  get 'signup' => 'users#new'
 
   get 'help' => 'static_pages#help'
 
@@ -20,8 +20,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
+  resources :users
   # Example resource route with options:
   #   resources :products do
   #     member do
